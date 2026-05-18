@@ -1,0 +1,5 @@
+.text-general { color: #1A1C1A; }
+.bg-primary { background-color: #0000FF; }
+.text-primary { color: #0000FF; }
+.no-scroll {scrollbar-width: none;}
+.no-scroll::-webkit-scrollbar {display: none;}
