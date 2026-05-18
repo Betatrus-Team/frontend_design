@@ -36,7 +36,7 @@ const Category1 = ({image, label} : Category1Prop) => {
 
 const Bestsellers = ({image, label, description, price} : BestSellersProp) => {
     return (
-        <section className="rounded-2xl h-126.5 shadow-md overflow-hidden lg:w-[23%] md:w-[48%] w-full">
+        <section className="rounded-2xl h-126.5 shadow-md overflow-hidden bg-white lg:w-[23%] md:w-[48%] w-full">
             <img src={image} alt="" className="h-87.5 w-full object-cover object-top" />
             <div className="p-6">
                 <h3 className="font-serif italic text-[20px]">{label}</h3>
@@ -98,7 +98,7 @@ const Home = () => {
                 </div>
             </section>
             <main className="">
-                <section className="h-14 px-20 py-5 flex md:flex-row flex-col justify-between font-manrope font-normal leading-6] mb-10">
+                <section className="md:px-20 px-5 py-5 flex md:flex-row flex-col items-center justify-between font-manrope font-normal leading-6]">
                     <p>24 - 72-Hr Delivery</p>
                     <p>100% Quality Guaranteed</p>
                     <p>Free Shipping For New Users</p>
@@ -121,7 +121,7 @@ const Home = () => {
                         <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} /></SwiperSlide>
                     </Swiper>
                 </section>
-                <section className="lg:px-10 md:px-3 px-2">
+                <section className="lg:px-10 md:px-3 px-2 mb-10">
                     <h2 className="font-serif italic md:text-[36px] text-[18px] my-15 text-center leading-10">Curated Collections</h2>
                     <div className="lg:h-200 md:h-180 flex justify-between md:flex-row flex-col md:gap-0 gap-5">
                         <section className="md:w-[58%] w-full md:h-full h-[370.72px] relative overflow-hidden rounded-xl">
@@ -152,10 +152,10 @@ const Home = () => {
                         </section>
                     </div>
                 </section>
-                <section className="lg:px-10 md:px-5 px-5 py-24">
+                <section className="lg:px-10 md:px-5 px-5 py-10 bg-[#ccc8c63b]">
                     <div className="text-center space-y-4 mb-16 text-general">
                         <p className="text-[14px] text-primary font-manrope font-medium leading-5 tracking-[1.4px]">CURATED FAVOURITES</p>
-                        <h2 className="text-[48px] text-general font-serif italic leading-10">The Bestsellers</h2>
+                        <h2 className="md:text-[48px] text-[18px] text-general font-serif italic leading-10">The Bestsellers</h2>
                     </div>
                     <div className="flex *:shrink-0 flex-wrap gap-y-16 justify-start lg:gap-8 md:gap-7">
                         <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
