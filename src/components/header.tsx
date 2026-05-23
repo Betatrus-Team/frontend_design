@@ -5,7 +5,7 @@ const Header = () => {
     const [menu, toggleMenu] = useState<boolean>(false);
     const [loggedIn, login] = useState<boolean>(null);
     return (
-        <div className="font-serif text-[#1A1C1A] ">
+        <div className="font-serif text-[#1A1C1A]">
             <header className="flex justify-between items-center-safe h-20 md:px-15 px-5">
                 <section className="lg:hidden" onClick={() => toggleMenu(!menu)}>
                     <Menu />
