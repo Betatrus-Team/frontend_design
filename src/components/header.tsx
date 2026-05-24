@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Header = () => {
     const [menu, toggleMenu] = useState<boolean>(false);
-    const [loggedIn, login] = useState<boolean>(null);
+    const [loggedIn, login] = useState<boolean | null>(null);
     return (
         <div className="font-serif text-[#1A1C1A]">
             <header className="flex justify-between items-center-safe h-20 md:px-15 px-5">
@@ -25,7 +25,7 @@ const Header = () => {
                     <li className="md:block hidden"><Heart size={20} /></li>
                     <li className="md:block hidden"><ShoppingBag size={20} /></li>
                     <li className={`${loggedIn ? "md:block hidden" : "hidden"}`}><UserIcon size={20} /></li>
-                    <li className={`${!loggedIn ? "md:block hidden" : "hidden"}`}>Login/Sign Up</li>
+                    <li className={`${!loggedIn ? "md:block hidden" : "hidden"}`} onClick={() => login(true)}>Login/Sign Up</li>
                 </section>
             </header>
             <section className={` ${menu ? "block" : "hidden"} `}>

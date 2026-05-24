@@ -1,4 +1,4 @@
-import { ArrowLeft, Eye, Heart, Info, Sparkles, Truck } from "lucide-react";
+import { ArrowLeft, Eye, Info } from "lucide-react";
 import AuthHeader from "../components/authentication_header";
 import Button from "../components/button";
 import AuthWriteup from "../components/authentication_writeup";
