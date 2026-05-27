@@ -4,6 +4,7 @@ export default {
       fontFamily: {
         serif: ["Noto Serif", "serif"],
         manrope: ["Manrope", "serif"],
+        bodoni: ["Bodoni Moda", "serif"],
       },
     },
   },

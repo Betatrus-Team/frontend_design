@@ -1,41 +1,40 @@
-import { Globe, Globe2 } from "lucide-react";
-
 const Footer = () => {
     return (
         <footer className="bg-[#F4F3F1]">
-            <div className="px-12 py-20 *:md:w-[22%] *:w-full md:gap-y-0 gap-y-12 flex md:flex-row flex-col justify-between">
+            <div className="px-12 pt-10 *:md:w-[22%] *:w-full md:gap-y-0 gap-y-12 flex md:flex-row flex-col justify-between mb-20">
                 <section className="pb-4.25 space-y-5.75">
-                    <h2 className="leading-7 text-[20px] font-serif">BETATRUS</h2>
-                    <p className="font-manrope text-[#1A1C1A] text-[14px]">Crafting premium beauty experiences through ethically sourced hair and sophisticated design. Curated for the modern atelier.</p>
+                    <h2 className="leading-7 text-[20px]">BETATRUS</h2>
+                    <p className="font-manrope text-[#1A1C1A] text-[14px]">Defining the standard for the modern hair atelier through craftsmanship and editorial excellence.</p>
                 </section>
                 <section className="space-y-6">
-                    <h2 className="font-manrope font-semibold text-primary text-[14px]">EXPLORE</h2>
-                    <div className="font-manrope text-[#1A1C1A] text-[14px] list-none space-y-3">
+                    <h2 className="font-manrope font-bold leading-4 text-primary text-[12px] tracking-[1.2px]">SHOP SELECTION</h2>
+                    <div className="font-manrope text-[#1A1C1A] leading-5 tracking-[0.35px] text-[14px] list-none space-y-3">
+                        <li>Shop Selection</li>
+                        <li>Curly</li>
+                        <li>Frontal</li>
+                    </div>
+                </section>
+                <section className="space-y-6">
+                    <h2 className="font-manrope font-semibold text-primary text-[14px] tracking-[1.2px]">THE ATELIER</h2>
+                    <div className="font-manrope text-[#1A1C1A] text-[14px] leading-5 tracking-[0.35px] list-none space-y-3">
                         <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Sustainabilty</li>
-                        <li>Contact</li>
+                        <li>Shipping</li>
+                        <li>Returns</li>
                     </div>
                 </section>
                 <section className="space-y-6">
-                    <h2 className="font-manrope font-semibold text-primary text-[14px]">SUPPORT</h2>
-                    <div className="font-manrope text-[#1A1C1A] text-[14px] list-none space-y-3">
-                        <li>Shipping & Returns</li>
-                        <li>FAQ</li>
-                        <li>Terms of Service</li>
-                    </div>
-                </section>
-                <section className="space-y-6">
-                    <h2 className="font-manrope font-semibold text-primary text-[14px]">LEGAL</h2>
-                    <p className="font-manrope text-[#1A1C1A] text-[14px] space-y-3">Privacy Policy</p>
-                    <div className="flex gap-4 text-primary">
-                        <Globe size={20} />
-                        <Globe2 size={20} />
-                    </div>
+                    <h2 className="font-manrope font-semibold text-primary text-[14px] tracking-[1.2px]">NEWSLETTER</h2>
+                    <input type="email" name="email" id="email" placeholder="Email Address" className="border border-[#D4C3BE] px-4 py-2.5" />
+                    <button>Subscribe</button>
                 </section>
             </div>
-            <div className="py-8 flex justify-center">
-                <p className="text-[12px] font-manrope text-[#1A1C1A] leading-4 tracking-[1.2px]">© 2026 BETATRUS. ALL RIGHTS RESERVED.</p>
+            <div className="px-12 py-8 flex justify-between text-[16px] border-t border-t-[#D4C3BE]">
+                <p className="font-manrope text-[#1A1C1A] leading-4 tracking-[1.2px]">© 2026 BETATRUS. Crafted for the Modern Atelier.</p>
+                <div className="flex gap-5">
+                    <p>Instagram</p>
+                    <p>Pintrest</p>
+                    <p>Twitter</p>
+                </div>
             </div>
         </footer>
     );
