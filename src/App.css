@@ -1,8 +1,9 @@
 .text-general { color: #1A1C1A; }
 .bg-primary { background-color: #0000FF; }
 .text-primary { color: #0000FF; }
+.border-primary { border-color: #0000FF; }
 .no-scroll {scrollbar-width: none;}
 .no-scroll::-webkit-scrollbar {display: none;}
 .font-bodoni {font-family: 'Bodoni Moda';}
 .font-manrope {font-family: 'Manrope';}
-.font-noto {font-family: 'Noto Serif';}
+.font-noto {font-family: 'Noto serif';}
