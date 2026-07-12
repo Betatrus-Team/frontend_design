@@ -11,6 +11,7 @@ import ShoppingCart from './pages/shopping_cart';
 import Favourites from './pages/favourite';
 import ShippingAddress from './pages/shipping';
 import Checkout from './pages/checkout';
+import PaymentConfirmation from './pages/payment_confirmation';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/favourites' element={<Favourites />} />
           <Route path='/shipping_address' element={<ShippingAddress />} />
           <Route path='/check_out' element={<Checkout />} />
+          <Route path='/payment_confirmation' element={<PaymentConfirmation />} />
         </Routes>
       </Router>
     </>
