@@ -1,6 +1,13 @@
-.text-general { color: #1A1C1A; }
 .bg-primary { background-color: #0000FF; }
+.bg-button { background-color: #02102D; }
+.bg-accent { background-color: #8274701f; }
+.bg-light { background-color: #5e5f5d1e; }
+.text-general { color: #1A1C1A; }
 .text-primary { color: #0000FF; }
+.text-secondary { color: #504441; }
+.text-light { color: #5E5F5D; }
+.text-button { color: #02102D; }
+.border-button { border-color: #02102D;}
 .border-primary { border-color: #0000FF; }
 .no-scroll {scrollbar-width: none;}
 .no-scroll::-webkit-scrollbar {display: none;}

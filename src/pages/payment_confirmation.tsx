@@ -16,7 +16,7 @@ const PaymentConfirmation = () => {
                         </div>
                     </div>
                     <h1 className="font-noto md:text-[60px] text-[40px] leading-15 text-center mb-2">Thank you for your <br/>purchase.</h1>
-                    <p className="font-manrope md:text-[18px] text-[16px] leading-7 mb-5">Order Confirmed! Your curated selection is being prepared.</p>
+                    <p className="font-manrope md:text-[18px] text-[16px] leading-7 mb-5 text-center">Order Confirmed! Your curated selection is being prepared.</p>
                 </section>
                 <section className="lg:w-[60%] w-[90%] pb-10 flex md:flex-row flex-col items-start gap-6">
                     <section className="bg-[#F4F3F1] rounded-2xl md:w-fit w-full lg:px-10 py-10 px-5">

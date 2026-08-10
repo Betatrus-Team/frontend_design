@@ -12,6 +12,9 @@ import Favourites from './pages/favourite';
 import ShippingAddress from './pages/shipping';
 import Checkout from './pages/checkout';
 import PaymentConfirmation from './pages/payment_confirmation';
+import Tracking from './pages/tracking';
+import Orders from './pages/order';
+import StepOne from './pages/vendor/onboarding_one';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path='/shipping_address' element={<ShippingAddress />} />
           <Route path='/check_out' element={<Checkout />} />
           <Route path='/payment_confirmation' element={<PaymentConfirmation />} />
+          <Route path='/track_order' element={<Tracking />} />
+          <Route path='/orders' element={<Orders />} />
+          <Route path='/vendor/onboarding/1' element={<StepOne />} />
         </Routes>
       </Router>
     </>
