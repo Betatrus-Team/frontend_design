@@ -15,6 +15,7 @@ import PaymentConfirmation from './pages/payment_confirmation';
 import Tracking from './pages/tracking';
 import Orders from './pages/order';
 import StepOne from './pages/vendor/onboarding_one';
+import StepTwo from './pages/vendor/onboarding_two';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path='/track_order' element={<Tracking />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/vendor/onboarding/1' element={<StepOne />} />
+          <Route path='/vendor/onboarding/2' element={<StepTwo />} />
         </Routes>
       </Router>
     </>
