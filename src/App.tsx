@@ -16,6 +16,8 @@ import Tracking from './pages/tracking';
 import Orders from './pages/order';
 import StepOne from './pages/vendor/onboarding_one';
 import StepTwo from './pages/vendor/onboarding_two';
+import Products from './pages/vendor/products';
+import SideBarLayout from './pages/vendor/layout/sideBarLayout';
 
 function App() {
   return (
@@ -38,6 +40,9 @@ function App() {
           <Route path='/orders' element={<Orders />} />
           <Route path='/vendor/onboarding/1' element={<StepOne />} />
           <Route path='/vendor/onboarding/2' element={<StepTwo />} />
+          <Route element={<SideBarLayout />}>
+            <Route path='/vendor/products' element={<Products />} />
+          </Route>
         </Routes>
       </Router>
     </>
