@@ -26,7 +26,7 @@ const Register = () => {
                             <input type="checkbox" name="terms" id="terms" />
                             <p className="text-[12px] text-[#504441] leading-5 font-manrope">I agree to the Terms of Service and Privacy Policy.</p>
                         </div>
-                        <Button label="Sign Up" extra="bg-[#02102D] w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
+                        <Button label="Sign Up" extra="bg-primary w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
                         <p className="font-manrope md:text-[15.26px] text-[12px] leading-[20.4px] tracking-[1.53px] text-center text-[##02102D]">Already have an account? Log In</p>
                     </form>
                 </section>

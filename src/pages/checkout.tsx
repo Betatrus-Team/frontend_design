@@ -19,7 +19,7 @@ const Checkout = () => {
                             <label className="flex px-6 py-6 w-full gap-4 shadow-lg items-center cursor-pointer rounded-2xl">
                                 <input type="radio" name="paymentMethod" className="peer hidden" />
 
-                                <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#0000FF]">
+                                <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#B02429]">
                                 <div className="w-[7.5px] h-[7.5px] rounded-full hidden"></div>
                                 </div>
 
@@ -35,7 +35,7 @@ const Checkout = () => {
                                 <label className="flex items-center gap-4 cursor-pointer">
                                     <input type="radio" name="paymentMethod" className="peer hidden" />
 
-                                    <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#0000FF]">
+                                    <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#B02429]">
                                         <div className="w-[7.5px] h-[7.5px] rounded-full hidden" />
                                     </div>
 
@@ -56,7 +56,7 @@ const Checkout = () => {
                             <label className="flex px-6 py-6 w-full gap-4 shadow-lg items-center cursor-pointer rounded-2xl">
                                 <input type="radio" name="paymentMethod" className="peer hidden" />
 
-                                <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#0000FF]">
+                                <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#B02429]">
                                 <div className="w-[7.5px] h-[7.5px] rounded-full hidden"></div>
                                 </div>
 
@@ -71,7 +71,7 @@ const Checkout = () => {
                             <label className="flex px-6 py-6 w-full gap-4 shadow-lg items-center cursor-pointer rounded-2xl">
                                 <input type="radio" name="paymentMethod" className="peer hidden" />
 
-                                <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#0000FF]">
+                                <div className="w-5 h-5 rounded-full border-2 peer-checked:*:bg-white peer-checked:*:block border-gray-400 flex items-center justify-center peer-checked:border-0 peer-checked:bg-[#B02429]">
                                 <div className="w-[7.5px] h-[7.5px] rounded-full hidden"></div>
                                 </div>
 
@@ -85,7 +85,7 @@ const Checkout = () => {
                             </label>                            
                         </div>
                         <div className="flex items-center-safe gap-6 pb-4">
-                            <Button label="Pay ₦422,500" extra="md:px-12 px-6 py-4 bg-[#02102D] md:text-[16px] text-[14px] text-white" />
+                            <Button label="Pay ₦422,500" extra="md:px-12 px-6 py-4 bg-primary md:text-[16px] text-[14px] text-white" />
                             <p className="flex items-center gap-1 md:text-[16px] text-[14px] leading-6"><ArrowLeft /> Back to Shipping</p>
                         </div>
                         <div className="md:text-[12px] text-[8px] font-bold leading-4 tracking-[1.2px] text-[#1a1c1a77] flex gap-8 *:flex *:gap-2 *:items-center">

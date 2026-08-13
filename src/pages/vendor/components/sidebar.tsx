@@ -2,7 +2,7 @@ import { BadgeCheck, LayoutDashboard, Package2, Settings, WalletCards } from "lu
 
 export const SideBar = () => {
     return (
-        <aside className="font-manrope text-light bg-primary p-3 w-full h-screen border-r border-r-gray-300">
+        <aside className="font-manrope text-light bg-[#FFF5F5] p-3 w-full h-screen border-r border-r-gray-300">
             <section className="mb-6">
                 <h1 className="font-bodoni md:text-[24px] text-[18px] leading-[31.2px] text-[#1C1B1B] font-medium">Betatrus Vendor</h1>
                 <p className="text-[14px] leading-5.25">Chisom Premium Hair</p>

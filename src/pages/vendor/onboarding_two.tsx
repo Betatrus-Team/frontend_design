@@ -44,7 +44,7 @@ const StepTwo = () => {
                             <section className="w-full h-64 relative">
                                 <img src={verifyImage} alt="verification image template" className="w-full h-full object-fit" />
                                 <div className="w-full h-full absolute top-0 left-0 flex items-end-safe p-3">
-                                    <p className="text-button text-[12px] leading-3.5 font-semibold">VERIFIED SECURITY STANDARDS</p>
+                                    <p className="text-primary text-[12px] leading-3.5 font-semibold">VERIFIED SECURITY STANDARDS</p>
                                 </div>
                             </section>
                         </section>
@@ -83,7 +83,7 @@ const StepTwo = () => {
                                 <section className="flex *:w-[48%] justify-between items-center">
                                     <div className="w-full lg:h-85.25 h-55.25 relative">
                                         <img src={bioImage} alt="" className="h-full w-full" />
-                                        <div className=" w-full h-full absolute top-0 left-0 flex flex-col items-center justify-end-safe py-15 text-button gap-2">
+                                        <div className=" w-full h-full absolute top-0 left-0 flex flex-col items-center justify-end-safe py-15 text-primary gap-2">
                                             <Camera />
                                             <p className="font-semibold text-[14px] leading-[14.4px]">OPEN CAMERA</p>
                                         </div>
@@ -93,14 +93,14 @@ const StepTwo = () => {
                                             <p className="text-primary lg:text-[12px] text-[10px] font-semibold leading-3.5 tracking-[0.6px] mb-2">PRO-TIP</p>
                                             <p className="lg:text-[14px] text-[12px] leading-4.25 text-[#5A413F]">Hold the card without covering your name or photo with your fingers. Ensure our face is fully visible within the frame.</p>
                                         </div>
-                                        <button className="bg-button text-white w-full py-4 flex items-center justify-center text-[12px] font-semibold leading-[14.4px] tracking-[1.2px]">TAKE SELFIE NOW</button>
+                                        <button className="bg-primary text-white w-full py-4 flex items-center justify-center text-[12px] font-semibold leading-[14.4px] tracking-[1.2px]">TAKE SELFIE NOW</button>
                                     </div>
                                 </section>
                             </section>
                             <section className="flex justify-between">
                                 <p className="lg:text-[12px] text-[10px] font-semibold leading-[14.4px] tracking-[0.6px] flex gap-2 items-center"><ArrowLeft className="lg:w-4 w-3 lg:h-5 h-4" /> BACK TO STEP 1</p>
                                 <p className="lg:text-[10px] text-[8px] font-bold leading-3 tracking-[0.8px] flex gap-2 items-center"><LockKeyhole fill="blue" color="white" className="lg:w-4 w-3 lg:h-5 h-4" /> SECURE ENCRYPTION</p>
-                                <button className="bg-button rounded-2xl text-white lg:px-8 px-4 py-4 flex lg:gap-2 gap-1 items-center justify-center lg:text-[12px] text-[10px] font-semibold leading-[14.4px] tracking-[1.2px]">SUBMIT FOR VERIFICATION <ArrowRight className="lg:w-4 w-3 lg:h-5 h-4" /></button>
+                                <button className="bg-primary rounded-2xl text-white lg:px-8 px-4 py-4 flex lg:gap-2 gap-1 items-center justify-center lg:text-[12px] text-[10px] font-semibold leading-[14.4px] tracking-[1.2px]">SUBMIT FOR VERIFICATION <ArrowRight className="lg:w-4 w-3 lg:h-5 h-4" /></button>
                             </section>
                         </section>
                     </section>

@@ -28,7 +28,7 @@ const VerifyAccount = () => {
                         <div className="flex justify-center md:hidden">
                             <input type='text' name="verify" placeholder="******" className={`w-[90%] bg-[#F4F3F1] px-[21.62px] py-[20.35px] text-[30px] font-bold tracking-[25px] text-center font-manrope rounded-lg`} />
                         </div>
-                        <Button label="Verify" extra="bg-[#02102D] w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
+                        <Button label="Verify" extra="bg-primary w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
                         <p className="font-manrope text-[15.26px] leading-[20.4px] tracking-[1.53px] text-center text-[##02102D]">Didn’t receive the code? Resend</p>
                     </form>
                 </section>

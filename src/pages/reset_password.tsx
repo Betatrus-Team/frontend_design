@@ -20,7 +20,7 @@ const ResetPassword = () => {
                     </div>
                     <form action="post" className="space-y-5">
                         <AuthInput label="Email Address" atrribute="email" placeholder="email@example.com" type="email" extra="h-[71.24px]" />
-                        <Button label="Send Reset Link" extra="bg-[#02102D] w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
+                        <Button label="Send Reset Link" extra="bg-primary w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
                         <p className="font-manrope text-[14px] leading-4 tracking-[1.53px] text-center text-[##02102D] flex justify-center items-center gap-2"><ArrowLeft size={14} /> Back to Login</p>
                     </form>
                 </section>

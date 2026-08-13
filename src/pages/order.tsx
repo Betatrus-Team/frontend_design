@@ -48,8 +48,8 @@ const Orders = () => {
                                 </div>
                                 <p className="md:text-[14px] text-[10px] font-semibold text-[#1C1B1B] flex gap-2 items-center leading-4.25"><span className="w-1.75 h-1.75 rounded-full bg-red-800 block" /> Payment Held in Escrow — In Transit</p>
                                 <div className="md:mt-10 mt-5 flex items-center md:gap-5 gap-2">
-                                    <Button label="TRACK ORDER" extra="bg-button text-white lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] font-normal" />
-                                    <Button label="CONFIRM DELIVERY" extra="border border-gray-300 lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] text-button font-normal" />
+                                    <Button label="TRACK ORDER" extra="bg-primary text-white lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] font-normal" />
+                                    <Button label="CONFIRM DELIVERY" extra="border border-gray-300 lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] text-primary font-normal" />
                                     <p className="lg:text-[12px] md:text-[9px] text-[8px] leading-[14.2px] tracking-[1.2px]">Need Help?</p>
                                 </div>
                             </div>
@@ -70,8 +70,8 @@ const Orders = () => {
                                 </div>
                                 <p className="md:text-[14px] text-[10px] font-semibold text-[#1C1B1B] flex gap-2 items-center leading-4.25"><span className="w-1.75 h-1.75 rounded-full bg-green-800 block" /> Preparing for Shipment</p>
                                 <div className="md:mt-10 mt-5 flex items-center md:gap-5 gap-2">
-                                    <Button label="TRACK ORDER" extra="bg-button text-white lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] font-normal" />
-                                    <Button label="CONFIRM DELIVERY" extra="border border-gray-300 lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] text-button font-normal" />
+                                    <Button label="TRACK ORDER" extra="bg-primary text-white lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] font-normal" />
+                                    <Button label="CONFIRM DELIVERY" extra="border border-gray-300 lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] text-primary font-normal" />
                                     <p className="lg:text-[12px] md:text-[9px] text-[8px] leading-[14.2px] tracking-[1.2px]">Need Help?</p>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@ const Orders = () => {
                                 </div>
                                 <p className="md:text-[14px] text-[10px] font-semibold text-[#1C1B1B] flex gap-2 items-center leading-4.25"><span className="w-1.75 h-1.75 rounded-full bg-red-800 block" /> Payment Verified — Awaiting Merchant Dispatch</p>
                                 <div className="md:mt-10 mt-5 flex items-center md:gap-5 gap-2">
-                                    <Button label="TRACK ORDER" extra="bg-button text-white lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] font-normal" />
-                                    <Button label="CONFIRM DELIVERY" extra="border border-gray-300 lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] text-button font-normal" />
+                                    <Button label="TRACK ORDER" extra="bg-primary text-white lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] font-normal" />
+                                    <Button label="CONFIRM DELIVERY" extra="border border-gray-300 lg:text-[12px] md:text-[10px] text-[8px] leading-[14.2px] tracking-[1.2px] text-primary font-normal" />
                                     <p className="lg:text-[12px] md:text-[9px] text-[8px] leading-[14.2px] tracking-[1.2px]">Need Help?</p>
                                 </div>
                             </div>

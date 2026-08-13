@@ -81,7 +81,7 @@ const ShoppingCart = () => {
                                 <p className="md:text-[30px] text-[25px] font-noto leading-9">₦197,500</p>
                             </div>
                         </div>
-                        <button className="bg-[#02102D] py-5 text-white rounded-full text-[18px] font-bold">Proceed to Checkout</button>
+                        <button className="bg-primary py-5 text-white rounded-full text-[18px] font-bold">Proceed to Checkout</button>
                         <p className="text-[12px] leading-16 text-[#827470] flex justify-center w-full items-center gap-1"><ShieldCheck size={12} /> Secure encrypted checkout enabled</p>
                     </div>
                 </section>

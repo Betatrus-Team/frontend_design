@@ -53,7 +53,7 @@ const Tracking = () => {
                     <p className="font-manrope text-[16px] text-center text-secondary">Enter your Order ID to see real-time updates on your luxury hair delivery.</p>
                     <div className="flex px-8 py-4 w-[90%] justify-between gap-2 bg-accent rounded-t-2xl">
                         <input type="text" name="" id="" placeholder="Order ID (e.g., TR-8829-XL)" className="font-manrope w-[80%] outline-0" />
-                        <button className="md:px-5 px-3 bg-[#02102D] flex items-center gap-2 py-3 text-white rounded-full text-[14px] font-bold">Track <ArrowRight size={15} /></button>
+                        <button className="md:px-5 px-3 bg-primary flex items-center gap-2 py-3 text-white rounded-full text-[14px] font-bold">Track <ArrowRight size={15} /></button>
                     </div>
                 </section>
                 <section className="w-[97%] flex md:flex-row flex-col md:items-stretch md:gap-0 gap-10 items-center justify-between h-fit mb-30">
@@ -62,7 +62,7 @@ const Tracking = () => {
                             <p className="font-manrope text-[10px] text-primary">ORDER #TR-8829-XL</p>
                             <div className="flex justify-between">
                                 <p className="font-noto lg:text-[24px] md:text-[20px] text-[18px] leading-8">Expected Delivery: Nov 24</p>
-                                <p className="bg-[#0000ff2d] px-4 py-1.5 rounded-full font-manrope font-semibold text-[#02102D] leading-4 text-[12px] flex items-center">In Transit</p>
+                                <p className="bg-[#0000ff2d] px-4 py-1.5 rounded-full font-manrope font-semibold text-primary leading-4 text-[12px] flex items-center">In Transit</p>
                             </div>
                         </div>
                         <div className="relative pl-5">
@@ -123,7 +123,7 @@ const Tracking = () => {
                                 <p className="text-[14px] font-manrope leading-5">Our beauty specialists are available 24/7 for any questions regarding your shipment.</p>
                                 <div className="flex lg:flex-row md:flex-col gap-3 mt-5">
                                     <Button label="Contact Us" extra="bg-button text-white font-normal" />
-                                    <Button label="Help Center" extra="border border-button text-button font-normal" />
+                                    <Button label="Help Center" extra="border border-button text-primary font-normal" />
                                 </div>
                             </div>
                         </section>

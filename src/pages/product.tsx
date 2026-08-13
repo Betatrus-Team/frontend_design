@@ -77,8 +77,8 @@ const ProductDescription = () => {
                             <button className="text-[18px]">+</button>
                         </div>
                         <div className="space-y-4 mb-4">
-                            <Button label="Add to Cart" extra="bg-[#02102D] h-[64px] w-full flex justify-center-safe items-center-safe text-white" />
-                            <Button label="Buy Now" extra="bg-[#02102D] h-[64px] w-full flex justify-center-safe items-center-safe text-white" />
+                            <Button label="Add to Cart" extra="bg-primary h-[64px] w-full flex justify-center-safe items-center-safe text-white" />
+                            <Button label="Buy Now" extra="bg-primary h-[64px] w-full flex justify-center-safe items-center-safe text-white" />
                         </div>
                         <button className="py-4 flex justify-center-safe gap-2 mb-10 items-center-safe text-primary w-full">
                             <Heart />

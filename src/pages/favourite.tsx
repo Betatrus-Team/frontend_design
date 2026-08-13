@@ -25,16 +25,16 @@ const Favourites = () => {
                                     <p className="text-[#827470] md:text-[14px] text-[12px] leading-5">Length: 22 inches • Color: Natural Black</p>
                                     <p className="text-[#795600] text-[10px] font-extrabold flex gap-1 items-center-safe"><Dot /> BACK IN STOCK</p>
                                     <div className="mt-5 md:flex hidden justify-between items-center">
-                                        <button className="bg-[#02102D] py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px] text-[14px] font-bold">ADD TO CART</button>
-                                        <div className="flex items-center gap-2 text-[12px] text-[#02102D]">
+                                        <button className="bg-primary py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px] text-[14px] font-bold">ADD TO CART</button>
+                                        <div className="flex items-center gap-2 text-[12px] text-primary">
                                             <Trash2 className="text-[#827470]" /> REMOVE
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="mt-8 flex justify-between items-center md:hidden">
-                                <button className="bg-[#02102D] py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px]  text-[14px] font-bold">ADD TO CART</button>
-                                <div className="flex items-center gap-2 text-[12px] text-[#02102D]">
+                                <button className="bg-primary py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px]  text-[14px] font-bold">ADD TO CART</button>
+                                <div className="flex items-center gap-2 text-[12px] text-primary">
                                     <Trash2 className="text-[#827470]" /> REMOVE
                                 </div>
                             </div>
@@ -52,16 +52,16 @@ const Favourites = () => {
                                     <p className="text-[#827470] md:text-[14px] text-[12px] leading-5">Length: 22 inches • Color: Natural Black</p>
                                     <p className="text-[#795600] text-[10px] font-extrabold flex gap-1 items-center-safe"><Dot /> BACK IN STOCK</p>
                                     <div className="mt-5 md:flex hidden justify-between items-center">
-                                        <button className="bg-[#02102D] py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px] text-[14px] font-bold">ADD TO CART</button>
-                                        <div className="flex items-center gap-2 text-[12px] text-[#02102D]">
+                                        <button className="bg-primary py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px] text-[14px] font-bold">ADD TO CART</button>
+                                        <div className="flex items-center gap-2 text-[12px] text-primary">
                                             <Trash2 className="text-[#827470]" /> REMOVE
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="mt-8 flex justify-between items-center md:hidden">
-                                <button className="bg-[#02102D] py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px] text-[14px] font-bold">ADD TO CART</button>
-                                <div className="flex items-center gap-2 text-[12px] text-[#02102D]">
+                                <button className="bg-primary py-4 md:px-10 px-5 text-white rounded-full leading-5 tracking-[1.4px] text-[14px] font-bold">ADD TO CART</button>
+                                <div className="flex items-center gap-2 text-[12px] text-primary">
                                     <Trash2 className="text-[#827470]" /> REMOVE
                                 </div>
                             </div>

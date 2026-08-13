@@ -63,7 +63,7 @@ const PaymentConfirmation = () => {
                     </section>
                 </section>
                 <section className="flex flex-col items-center gap-6 pb-10">
-                    <Button label="CONTINUE SHOPPING" extra="md:px-10 px-5 bg-[#02102D] py-5 text-white rounded-full text-[14px] font-bold" />
+                    <Button label="CONTINUE SHOPPING" extra="md:px-10 px-5 bg-primary py-5 text-white rounded-full text-[14px] font-bold" />
                     <p className="text-[14px] leading-5 font-manrope tracking-[1.4px]">TRACK MY ORDER</p>
                 </section>
             </main>

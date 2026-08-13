@@ -1,5 +1,6 @@
-import { Heart, Menu, Search, ShoppingBag, UserIcon } from "lucide-react"
+import { Heart, Menu, Search, ShoppingBag, UserIcon } from "lucide-react";
 import { useState } from "react";
+import logo from "../assets/images/BETATRUS 1.1 1.png";
 
 const Header = () => {
     const [menu, toggleMenu] = useState<boolean>(false);
@@ -11,7 +12,7 @@ const Header = () => {
                     <Menu />
                 </section>
                 <section>
-                    <p className="text-[1.5rem] leading-8 tracking-[4.8px]">BETATRUS</p>
+                    <img src={logo} alt="Betatrus Logo" />
                 </section>
                 <nav className="gap-8 text-[1.1rem] list-none *:text-[#1A1C1A] font-light leading-6 tracking-[0.4px] lg:flex hidden">
                     <li>Home</li>
@@ -30,7 +31,6 @@ const Header = () => {
             </header>
             <section className={` ${menu ? "block" : "hidden"} `}>
                 <nav className="gap-8 text-[1.1rem] list-none *:text-[#1A1C1A] font-light leading-6 tracking-[0.4px] lg:hidden block fixed top-21 z-1000 left-0 bg-white px-10 py-5 rounded-2xl space-y-6">
-                    <p className="font-serif text-[18px] leading-8 tracking-[4.8px]">BETATRUS</p>
                     <li>Home</li>
                     <li>Wigs</li>
                     <li>Hair Care</li>

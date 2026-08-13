@@ -92,7 +92,7 @@ const ShippingAddress = () => {
                                             <label htmlFor="cvv" className="text-[10px] leading-3 font-bold tracking-[0.8px] text-[#5A413F]">CVV</label>
                                             <input type="text" name="cvv" id="cvv" placeholder="123" className="w-full font-normal bg-white py-3.25 px-4 border border-[#1c1b1b1c] text-[#6B7280]" />
                                         </div>
-                                        <button className="bg-[#02102D] w-full text-white rounded-0 py-4 font-semibold text-[12px] tracking-[1.2px] leading-[14.4px]">CONFIRM 250,000 ESCROW PAYMENT</button>
+                                        <button className="bg-primary w-full text-white rounded-0 py-4 font-semibold text-[12px] tracking-[1.2px] leading-[14.4px]">CONFIRM 250,000 ESCROW PAYMENT</button>
                                     </form>
                                 </div>
                             </section>

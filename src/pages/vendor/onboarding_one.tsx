@@ -60,7 +60,7 @@ const StepOne = () => {
 
                                 <div className="flex mt-12 w-full items-center-safe justify-between">
                                     <button className=" md:text-[16px] text-[12px] leading-6 tracking-[1.6px] text-light">SAVE DRAFT</button>
-                                    <button className="lg:px-8 md:px-6 px-4 py-3 bg-[#02102D]  md:text-[16px] text-[12px] text-white flex items-center gap-2 rounded-lg leading-6 font-semibold">NEXT: VERIFICATION <ArrowRight /></button>
+                                    <button className="lg:px-8 md:px-6 px-4 py-3 bg-primary  md:text-[16px] text-[12px] text-white flex items-center gap-2 rounded-lg leading-6 font-semibold">NEXT: VERIFICATION <ArrowRight /></button>
                                 </div>
                             </form>
                         </div>
