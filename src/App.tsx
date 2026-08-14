@@ -18,6 +18,12 @@ import StepOne from './pages/vendor/onboarding_one';
 import StepTwo from './pages/vendor/onboarding_two';
 import Products from './pages/vendor/products';
 import SideBarLayout from './pages/vendor/layout/sideBarLayout';
+import Verification from './pages/vendor/verification';
+import VendorSetting from './pages/vendor/setting';
+import VendorDashboard from './pages/vendor/dashboard';
+import Sales from './pages/vendor/sales';
+import AddProduct from './pages/vendor/add_product_one';
+import ProductVariants from './pages/vendor/add_product_two';
 
 function App() {
   return (
@@ -42,7 +48,13 @@ function App() {
           <Route path='/vendor/onboarding/2' element={<StepTwo />} />
           <Route element={<SideBarLayout />}>
             <Route path='/vendor/products' element={<Products />} />
+            <Route path='/vendor/verification' element={<Verification />} />
+            <Route path='/vendor/settings' element={<VendorSetting />} />
+            <Route path='/vendor/' element={<VendorDashboard />} />
+            <Route path='/vendor/sales' element={<Sales />} />
           </Route>
+          <Route path='/vendor/add_products/1' element={<AddProduct />} />
+          <Route path='/vendor/add_products/2' element={<ProductVariants />} />
         </Routes>
       </Router>
     </>
