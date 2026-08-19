@@ -3,8 +3,10 @@ import AuthInput from "../components/authentication_input";
 import Button from "../components/button";
 import AuthWriteup from "../components/authentication_writeup";
 import { ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ResetPassword = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <AuthHeader />
@@ -21,7 +23,7 @@ const ResetPassword = () => {
                     <form action="post" className="space-y-5">
                         <AuthInput label="Email Address" atrribute="email" placeholder="email@example.com" type="email" extra="h-[71.24px]" />
                         <Button label="Send Reset Link" extra="bg-primary w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
-                        <p className="font-manrope text-[14px] leading-4 tracking-[1.53px] text-center text-[##02102D] flex justify-center items-center gap-2"><ArrowLeft size={14} /> Back to Login</p>
+                        <p className="font-manrope text-[14px] leading-4 tracking-[1.53px] text-center text-[##02102D] flex justify-center items-center gap-2 cursor-pointer" onClick={() => navigate("../sign_in")}><ArrowLeft size={14} /> Back to Login</p>
                     </form>
                 </section>
                 <AuthWriteup />

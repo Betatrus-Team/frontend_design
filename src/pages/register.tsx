@@ -2,8 +2,10 @@ import AuthHeader from "../components/authentication_header";
 import AuthInput from "../components/authentication_input";
 import Button from "../components/button";
 import AuthWriteup from "../components/authentication_writeup";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <AuthHeader />
@@ -27,7 +29,7 @@ const Register = () => {
                             <p className="text-[12px] text-[#504441] leading-5 font-manrope">I agree to the Terms of Service and Privacy Policy.</p>
                         </div>
                         <Button label="Sign Up" extra="bg-primary w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
-                        <p className="font-manrope md:text-[15.26px] text-[12px] leading-[20.4px] tracking-[1.53px] text-center text-[##02102D]">Already have an account? Log In</p>
+                        <p className="font-manrope md:text-[15.26px] text-[12px] leading-[20.4px] tracking-[1.53px] text-center text-[##02102D]">Already have an account? <span className="cursor-pointer" onClick={() => navigate("../sign_in")}>Log In</span></p>
                     </form>
                 </section>
                 <AuthWriteup />

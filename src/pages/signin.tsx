@@ -2,8 +2,10 @@ import AuthHeader from "../components/authentication_header";
 import AuthInput from "../components/authentication_input";
 import Button from "../components/button";
 import AuthWriteup from "../components/authentication_writeup";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <AuthHeader />
@@ -17,9 +19,9 @@ const SignIn = () => {
                     <form action="post" className="space-y-5">
                         <AuthInput label="Email Address" atrribute="email" placeholder="email@example.com" type="email" extra="h-[71.24px]" />
                         <AuthInput label="Password" atrribute="password" placeholder="enter your password" type="password" extra="h-[71.24px]" />
-                        <p className="text-[15.26px] text-primary leading-5 font-manrope text-end">Forgot Password?</p>
+                        <p className="text-[15.26px] text-primary leading-5 font-manrope text-end cursor-pointer" onClick={() => navigate("../reset_password")}>Forgot Password?</p>
                         <Button label="Sign In" extra="bg-primary w-full rounded-none py-[10px] text-manrope text-[16px] leading-6 text-white mt-5" />
-                        <p className="font-manrope md:text-[15.26px] text-[12px] leading-[20.4px] tracking-[1.53px] text-center text-[##02102D]">Don’t have an account? Sign up</p>
+                        <p className="font-manrope md:text-[15.26px] text-[12px] leading-[20.4px] tracking-[1.53px] text-center text-[##02102D]">Don’t have an account? <span className="cursor-pointer" onClick={() => navigate("../register")}>Sign up</span></p>
                     </form>
                 </section>
                 <AuthWriteup />

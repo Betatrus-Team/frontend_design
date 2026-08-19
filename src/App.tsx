@@ -24,6 +24,7 @@ import VendorDashboard from './pages/vendor/dashboard';
 import Sales from './pages/vendor/sales';
 import AddProduct from './pages/vendor/add_product_one';
 import ProductVariants from './pages/vendor/add_product_two';
+import Category from './pages/category';
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
           <Route path='/reset_password' element={<ResetPassword />} />
           <Route path='/change_password' element={<NewPassword />} />
           <Route path='/product' element={<ProductDescription />} />
-          <Route path='/shopping_cart' element={<ShoppingCart />} />
+          <Route path='/categories/:category' element={<Category />} />
+          <Route path='/cart' element={<ShoppingCart />} />
           <Route path='/favourites' element={<Favourites />} />
           <Route path='/shipping_address' element={<ShippingAddress />} />
           <Route path='/check_out' element={<Checkout />} />

@@ -2,8 +2,10 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import WigImage from "../assets/images/wig.png";
 import { Heart, ShieldCheck, ShoppingBag, Trash2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ShoppingCart = () => {
+    const navigate = useNavigate();
     return (
         <div className="flex flex-col">
             <Header />
@@ -88,7 +90,7 @@ const ShoppingCart = () => {
                 <section className="mb-20">
                     <h2 className="text-[30px] font-noto leading-9 text-center mb-16">Complete Your Ritual</h2>
                     <div className="w-full *:lg:w-[23%] *:md:w-[40%] *:w-[75%] gap-5 overflow-x-auto no-scroll *:shrink-0 pb-3 flex">
-                        <div className="space-y-3 shadow-xl rounded-xl">
+                        <div className="space-y-3 shadow-xl rounded-xl" onClick={() => navigate("../product")}>
                             <img src={WigImage} alt="" className="w-full h-90 rounded-xl" />
                             <div className="space-y-2 p-2 pb-3">
                                 <p className="text-[18px] font-noto leading-7">Gel Polish - Rosé</p>

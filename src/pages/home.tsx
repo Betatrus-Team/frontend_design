@@ -10,22 +10,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useNavigate } from "react-router-dom";
 
 type Category1Prop = {
     image : string,
-    label : string
+    label : string,
+    onclick : () => void
 }
 
 type BestSellersProp = {
     image : string,
     label : string,
     description : string,
-    price : string
+    price : string,
+    onclick : () => void
 }
 
-const Category1 = ({image, label} : Category1Prop) => {
+const Category1 = ({ image, label, onclick } : Category1Prop) => {
     return (
-        <div className="space-y-4 w-full">
+        <div className="space-y-4 w-full" onClick={onclick}>
             <div className="w-full lg:h-89 h-102.25 overflow-hidden">
                 <img src={image} alt="" className="object-cover object-top w-full h-full" />
             </div>
@@ -34,9 +37,9 @@ const Category1 = ({image, label} : Category1Prop) => {
     )
 }
 
-const Bestsellers = ({image, label, description, price} : BestSellersProp) => {
+const Bestsellers = ({ image, label, description, price, onclick } : BestSellersProp) => {
     return (
-        <section className="rounded-2xl h-126.5 shadow-md overflow-hidden bg-white lg:w-[23%] md:w-[48%] w-full">
+        <section className="rounded-2xl h-126.5 shadow-md overflow-hidden bg-white lg:w-[23%] md:w-[48%] w-full" onClick={onclick}>
             <img src={image} alt="" className="h-87.5 w-full object-cover object-top" />
             <div className="p-6">
                 <h3 className="font-noto italic text-[20px]">{label}</h3>
@@ -57,7 +60,7 @@ const Bestsellers = ({image, label, description, price} : BestSellersProp) => {
     );
 }
 
-const Recommended = ({image, label, description, price} : BestSellersProp) => {
+const Recommended = ({image, label, description, price, onclick} : BestSellersProp) => {
     return (
         <section className="rounded-2xl shadow-md overflow-hidden lg:w-[23%] md:w-[32%] w-full md:h-97 h-110 text-[#1A1C1A]">
             <img src={image} alt="" className="md:h-64 h-78 w-full object-cover object-top" />
@@ -72,7 +75,7 @@ const Recommended = ({image, label, description, price} : BestSellersProp) => {
                         <Heart size={18} />
                         <ShoppingBag size={18} />
                     </div>
-                    <p className="font-manrope text-[14px] font-medium text-primary">Details</p>
+                    <p className="font-manrope text-[14px] font-medium text-primary cursor-pointer" onClick={onclick}>Details</p>
                 </div>
             </div>
         </section>
@@ -80,9 +83,11 @@ const Recommended = ({image, label, description, price} : BestSellersProp) => {
 }
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <Header />
+            {/* Hero Section */}
             <section className="hero w-full h-[calc(100vh-80px)] overflow-hidden relative">
                 <img src={Hero} alt="Hero Image" className="w-full h-full object-cover object-center" />
                 <div className="w-full h-full bg-black opacity-40 absolute top-0 left-0" />
@@ -91,12 +96,16 @@ const Home = () => {
                         <h1 className="font-noto italic md:text-[72px] text-[40px] text-center md:leading-22 leading-10">Your Hair, Delivered. No Comprises.</h1>
                         <p className="font-manrope md:text-[20px] text-[14px] text-center md:px-10 px-1 md:leading-[29.3px] leading-4.5">Shop verified human hair wigs, extensions, and luxury beauty products — with guaranteed delivery and buyer protection on every order.</p>
                         <div className="flex md:flex-row flex-col gap-7.5">
-                            <Button label="Shop The Collection" extra="bg-primary text-white" />
+                            <Button label="Shop The Collection" extra="bg-primary text-white" onclick={() =>{ document.getElementById("collections")?.scrollIntoView({
+                                behavior: "smooth"
+                            });}} />
                             <Button label="Sell on Betatrus" extra="bg-white text-general" />
                         </div>
                     </div>
                 </div>
             </section>
+
+            {/* Main Body */}
             <main className="">
                 <section className="md:px-20 px-5 py-5 flex md:flex-row flex-col items-center justify-between font-manrope font-normal leading-6]">
                     <p>24 - 72-Hr Delivery</p>
@@ -104,24 +113,24 @@ const Home = () => {
                     <p>Free Shipping For New Users</p>
                     <p>Secure Payment Method</p>
                 </section>
+
+                {/* Categories */}
                 <section className="px-5 py-10 w-full no-scroll">
                     <Swiper modules={[Pagination, Autoplay]}
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 3000 }}
                     loop={true}
-                    slidesPerView={window.innerWidth > 1280 ? 4 : window.innerWidth > 768 ? 2 : 1}
+                    slidesPerView={window.innerWidth >= 1280 ? 4 : window.innerWidth >= 768 ? 2 : 1}
                     spaceBetween={30}
                     className="w-full"
                     >
-                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair1} /></SwiperSlide>
-                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} /></SwiperSlide>
-                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair1} /></SwiperSlide>
-                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} /></SwiperSlide>
-                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} /></SwiperSlide>
-                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} /></SwiperSlide>
+                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair1} onclick={() => navigate("../categories/body_wave_bundles")} /></SwiperSlide>
+                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} onclick={() => navigate("../categories/nails")} /></SwiperSlide>
+                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair1} onclick={() => navigate("../categories/hairs")} /></SwiperSlide>
+                        <SwiperSlide><Category1 label="Body Wave Bundle" image={Hair2} onclick={() => navigate("../categories/wigs")} /></SwiperSlide>
                     </Swiper>
                 </section>
-                <section className="lg:px-10 md:px-3 px-2 mb-10">
+                <section className="lg:px-10 md:px-3 px-2 mb-10" id="collections">
                     <h2 className="font-noto italic md:text-[36px] text-[18px] my-15 text-center leading-10">Curated Collections</h2>
                     <div className="lg:h-200 md:h-180 flex justify-between md:flex-row flex-col md:gap-0 gap-5">
                         <section className="md:w-[58%] w-full md:h-full h-[370.72px] relative overflow-hidden rounded-xl">
@@ -158,13 +167,13 @@ const Home = () => {
                         <h2 className="md:text-[48px] text-[18px] text-general font-noto italic leading-10">The Bestsellers</h2>
                     </div>
                     <div className="flex *:shrink-0 flex-wrap gap-y-16 justify-start lg:gap-8 md:gap-7">
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
-                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
+                        <Bestsellers label="The Silk Bob" description="14' Virgin Malaysian Silk Base" price="117,500" image={Hair1} onclick={() => navigate("/product")} />
                     </div>
                 </section>
                 <section className="gap-8 flex justify-center w-full">
@@ -181,11 +190,11 @@ const Home = () => {
                         <p className="font-manrope text-[16px] leading-6 text-[#504441] md:text-start text-center">The latest drops from our digital atelier.</p>
                     </div>
                     <div className="flex *:shrink-0 flex-wrap gap-y-16 justify-start lg:gap-8 lg:gap-y-0 md:gap-y-10 md:gap-[2%]">
-                        <Recommended label="Raven Straight" price="117,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair1}  />
-                        <Recommended label="Raven Straight" price="115,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair2}  />
-                        <Recommended label="Raven Straight" price="128,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair1}  />
-                        <Recommended label="Raven Straight" price="87,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair2}  />
-                        <Recommended label="Raven Straight" price="117,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair1}  />
+                        <Recommended label="Raven Straight" price="117,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair1} onclick={() => navigate("/product")}  />
+                        <Recommended label="Raven Straight" price="115,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair2} onclick={() => navigate("/product")}  />
+                        <Recommended label="Raven Straight" price="128,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair1} onclick={() => navigate("/product")}  />
+                        <Recommended label="Raven Straight" price="87,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair2} onclick={() => navigate("/product")}  />
+                        <Recommended label="Raven Straight" price="117,000" description="Ultra-thin HD lace, pre-plucked hairline." image={Hair1} onclick={() => navigate("/product")}  />
                     </div>
                 </section>
                 <section className="mb-24 flex justify-center-safe">

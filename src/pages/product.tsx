@@ -21,8 +21,8 @@ const ProductDescription = () => {
                         <div className="w-full md:h-200 h-100 overflow-hidden rounded-xl mb-6">
                             <img src={wigImage} alt="" className="w-full h-full object-cover object-top" />
                         </div>
-                        <div className="*:md:w-[23%] *:w-[35%] w-full *:shrink-0 *:md:h-38 h-35 gap-[2%] flex md:overflow-hidden overflow-x-auto">
-                            <div className="rounded-xl overflow-hidden border-2 border-black">
+                        <div className="*:md:w-[23%] *:w-[35%] w-full *:shrink-0 md:h-38 h-35 gap-[2%] flex md:overflow-x-hidden overflow-x-auto">
+                            <div className="rounded-xl overflow-hidden border-2 h-full border-black">
                                 <img src={wigImage} alt="" className="w-full h-full object-cover object-top" />
                             </div>
                             <div className="rounded-xl overflow-hidden border border-[#d4c3beab]">
@@ -42,11 +42,11 @@ const ProductDescription = () => {
                             <p className="md:text-[24px] text-[20px] font-medium text-primary">$495.00</p>
                             <div className="h-4 bg-[#504441] w-px" />
                             <div className="text-primary flex *:w-6 *:h-4.75">
-                                <Star fill="blue" />
-                                <Star fill="blue" />
-                                <Star fill="blue" />
-                                <Star fill="blue" />
-                                <Star fill="blue" />
+                                <Star fill="red" />
+                                <Star fill="red" />
+                                <Star fill="red" />
+                                <Star fill="red" />
+                                <Star fill="red" />
                             </div>
                             <p className="text-[16px] leading-5 lg:block md:hidden ">(24 Reviews)</p>
                         </div>
