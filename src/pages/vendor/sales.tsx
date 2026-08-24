@@ -1,10 +1,12 @@
-import { ArrowUpRight, LockKeyhole, Clock3, Search, SlidersHorizontal, ShieldCheck, TrendingUp } from "lucide-react";
+import { LockKeyhole, Clock3, Search, SlidersHorizontal, ShieldCheck, TrendingUp } from "lucide-react";
 import RevenueChart from "./components/revenue_chart";
 import { VendorHeader } from "./components/header";
+import { PageTitle } from "../../components/title";
 
 const Sales = () => {
   return (
     <div>
+      <PageTitle title={"BETATRUS VENDOR | SALES"} />
       <VendorHeader title="Verification" />
       <main className="font-manrope flex justify-center bg-gray-50 pb-22">
         <div className="lg:w-[90%] w-[95%] lg:my-15 md:my-10 mt-7 mb-10">

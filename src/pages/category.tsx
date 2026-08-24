@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import wig from "../assets/images/Image (2).png"
 import { useNavigate, useParams } from "react-router-dom";
+import { PageTitle } from "../components/title";
 
 const products = [
   {
@@ -73,6 +74,7 @@ const Category = () => {
     const navigate = useNavigate();
     return (
     <div>
+        <PageTitle title={`BETATRUS | ${category?.split("_").join(" ").toUpperCase()}`} />
         <Header />
         <main className="min-h-screen bg-white font-manrope flex justify-center mb-10">
         {/* Page Content */}
@@ -82,7 +84,7 @@ const Category = () => {
                 <section>
 
                 <h1 className="text-[30px] font-bold text-gray-900 md:text-[34px] capitalize">
-                    {category.split("_").join(" ")}
+                    {category?.split("_").join(" ")}
                 </h1>
 
                 <p className="mt-2 max-w-162.5 md:text-[14.71px] text-[12px] leading-5">

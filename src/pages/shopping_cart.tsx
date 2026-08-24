@@ -3,11 +3,13 @@ import Header from "../components/header";
 import WigImage from "../assets/images/wig.png";
 import { Heart, ShieldCheck, ShoppingBag, Trash2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { PageTitle } from "../components/title";
 
 const ShoppingCart = () => {
     const navigate = useNavigate();
     return (
         <div className="flex flex-col">
+            <PageTitle title={"BETATRUS | CART"} />
             <Header />
             <main className="flex-1 pt-20 px-6 font-manrope">
                 <section className="space-y-4 mb-12">

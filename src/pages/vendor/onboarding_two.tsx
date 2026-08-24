@@ -4,6 +4,7 @@ import verifyImage from "../../assets/images/Identity verification example.png";
 import bioImage from "../../assets/images/Example Selfie Verification.png";
 import { useRef, useState } from "react";
 import Footer from "./components/footer";
+import { PageTitle } from "../../components/title";
 
 const StepTwo = () => {
     const cacUpload = useRef<HTMLInputElement>(null);
@@ -14,6 +15,7 @@ const StepTwo = () => {
     });
     return (
         <div>
+            <PageTitle title={"BETATRUS VENDOR | ONBOARDING STEP TWO"} />
             <VendorHeader />
             <main className="flex flex-col items-center pt-15 bg-[#FCF9F8] h-fit">
                 <div className="lg:w-[90%] w-[95%] font-manrope mb-20">

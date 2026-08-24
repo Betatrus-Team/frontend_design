@@ -2,10 +2,12 @@ import { Dot, Trash2 } from "lucide-react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import WigImage from "../assets/images/wig.png";
+import { PageTitle } from "../components/title";
 
 const Favourites = () => {
     return (
         <div className="flex flex-col">
+            <PageTitle title={"BETATRUS | FAVOURITES"} />
             <Header />
             <main className="flex-1 py-20 px-2 flex justify-center font-manrope text-[#1A1C1A]">
                 <div className="md:w-[80%] w-[95%]">

@@ -3,10 +3,12 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import myWig from "../assets/images/wig.png";
 import Button from "../components/button";
+import { PageTitle } from "../components/title";
 
 const PaymentConfirmation = () => {
     return (
         <div>
+            <PageTitle title={"BETATRUS | CONFIRM PAYMENT"} />
             <Header />
             <main className="py-10 w-full flex gap-5 flex-col items-center">
                 <section className="lg:w-[60%] md:w-[80%] py-10 flex flex-col items-center">

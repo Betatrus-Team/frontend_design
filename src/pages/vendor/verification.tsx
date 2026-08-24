@@ -1,9 +1,11 @@
 import { AlertTriangle, BriefcaseBusinessIcon, Building2, CheckCircle2, Clock3, FileWarning, Landmark, Lock, LockKeyhole, ShieldCheck, Zap } from "lucide-react";
 import { VendorHeader } from "./components/header"
+import { PageTitle } from "../../components/title";
 
 const Verification = () => {
     return (
         <div>
+            <PageTitle title={"BETATRUS VENDOR | VERIFICATION"} />
             <VendorHeader title="Verification" />
             <main className="font-manrope flex justify-center bg-gray-50 pb-22">
                 <div className="lg:w-[90%] w-[95%] lg:my-15 md:my-10 mt-7 mb-10">

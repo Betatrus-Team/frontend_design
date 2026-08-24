@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     const [menu, toggleMenu] = useState<boolean>(false);
-    const [loggedIn, login] = useState<boolean | null>(null);
+    const [loggedIn, _login] = useState<boolean | null>(null);
     return (
         <div className="font-serif text-[#1A1C1A]">
             <header className="flex justify-between items-center-safe h-20 lg:px-15 md:px-10 px-5 shadow-xl">

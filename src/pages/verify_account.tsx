@@ -1,10 +1,12 @@
 import AuthHeader from "../components/authentication_header";
 import Button from "../components/button";
 import AuthWriteup from "../components/authentication_writeup";
+import { PageTitle } from "../components/title";
 
 const VerifyAccount = () => {
     return (
         <div>
+            <PageTitle title={"BETATRUS | VERIFY YOUR ACCOUNT"} />
             <AuthHeader />
             <main className="w-full justify-center items-center flex flex-col">
                 <section className="lg:w-[50%] md:w-[75%] w-[90%] md:py-10 py-2 text-center space-y-5 mb-10">

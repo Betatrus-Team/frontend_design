@@ -1,10 +1,12 @@
 import { Bell, LockKeyhole, Plus, ShieldCheck, TrendingUp, WalletCards } from "lucide-react";
 import { VendorHeader } from "./components/header"
+import { PageTitle } from "../../components/title";
 
 const VendorDashboard = () => {
     return (
         <div>
-            <VendorHeader title="Verification" />
+            <PageTitle title={"BETATRUS VENDOR | DASHBOARD"} />
+            <VendorHeader title="Dashboard" />
             <main className="font-manrope flex justify-center bg-gray-50 pb-22">
                 <div className="lg:w-[90%] w-[95%] lg:my-15 md:my-10 mt-7 mb-10">
                     
@@ -146,7 +148,7 @@ const VendorDashboard = () => {
                             {/* Table */}
                             <div className="w-full overflow-x-auto">
 
-                                <table className="w-full min-w-[600px] border-collapse">
+                                <table className="w-full min-w-150 border-collapse">
 
                                 <thead>
                                     <tr className="border-b border-gray-200 bg-gray-50">

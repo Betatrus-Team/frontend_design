@@ -3,10 +3,12 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Button from "../components/button";
 import myWig from "../assets/images/wig.png";
+import { PageTitle } from "../components/title";
 
 const Checkout = () => {
     return (
         <div>
+            <PageTitle title={"BETATRUS | CHECKOUT"} />
             <Header />
             <main className="w-full px-10 py-20 font-manrope">
                 <div className="flex lg:flex-row flex-col gap-16 text-[#1a1c1a]">

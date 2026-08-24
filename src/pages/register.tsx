@@ -3,11 +3,13 @@ import AuthInput from "../components/authentication_input";
 import Button from "../components/button";
 import AuthWriteup from "../components/authentication_writeup";
 import { useNavigate } from "react-router-dom";
+import { PageTitle } from "../components/title";
 
 const Register = () => {
     const navigate = useNavigate();
     return (
         <div>
+            <PageTitle title={"BETATRUS | SIGN UP"} />
             <AuthHeader />
             <main className="w-full justify-center items-center flex flex-col">
                 <section className="lg:w-[50%] md:w-[75%] w-[90%] py-10 text-center space-y-5 mb-10">

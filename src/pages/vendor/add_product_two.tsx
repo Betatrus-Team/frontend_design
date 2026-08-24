@@ -4,10 +4,12 @@ import {
   Plus,
   CircleCheck,
 } from "lucide-react";
+import { PageTitle } from "../../components/title";
 
 const ProductVariants = () => {
   return (
     <main className="font-manrope flex justify-center bg-gray-50">
+        <PageTitle title={"BETATRUS VENDOR | ADD PRODUCT STEP TWO"} />
         <div className="lg:w-[90%] w-[95%] lg:my-15 md:my-10 mt-7">
 
             {/* Top Section */}

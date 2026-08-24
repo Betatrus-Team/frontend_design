@@ -3,10 +3,12 @@ import wigImage from "../assets/images/wig.png"
 import { Heart, Star } from "lucide-react";
 import Button from "../components/button";
 import Footer from "../components/footer";
+import { PageTitle } from "../components/title";
 
 const ProductDescription = () => {
     return (
         <div>
+            <PageTitle title={"BETATRUS | PRODUCT"} />
             <Header />
             <main className="font-manrope py-10 lg:px-10 md:px-3 px-2 text-[#504441]">
                 <ul className="breadcrumnb flex items-center gap-2 text-[16px] text-[#504441] mb-12 leading-6">

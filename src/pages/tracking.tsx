@@ -2,6 +2,7 @@ import { ArrowRight, Check, Truck, Package, Cog, Store, type LucideIcon, Headset
 import myWig from "../assets/images/wig.png";
 import Header from "../components/header";
 import Button from "../components/button";
+import { PageTitle } from "../components/title";
 
 type ProcessesProp = {
     title : string,
@@ -46,6 +47,7 @@ const Tracking = () => {
     
     return (
         <div>
+            <PageTitle title={"BETATRUS | TRACK ORDER"} />
             <Header />
             <main className="flex flex-col items-center gap-20">
                 <section className="lg:w-[50%] md:w-[80%] w-[95%] flex flex-col items-center gap-6 mt-15">

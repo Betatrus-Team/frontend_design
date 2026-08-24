@@ -11,6 +11,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useNavigate } from "react-router-dom";
+import { PageTitle } from "../components/title";
 
 type Category1Prop = {
     image : string,
@@ -86,6 +87,7 @@ const Home = () => {
     const navigate = useNavigate();
     return (
         <div>
+            <PageTitle title={"BETATRUS | HOME"} />
             <Header />
             {/* Hero Section */}
             <section className="hero w-full h-[calc(100vh-80px)] overflow-hidden relative">

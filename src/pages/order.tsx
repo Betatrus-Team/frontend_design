@@ -4,6 +4,7 @@ import Header from "../components/header";
 import myWig from "../assets/images/wig.png";
 import { LockKeyhole } from "lucide-react";
 import Button from "../components/button";
+import { PageTitle } from "../components/title";
 
 type OrdersStateProp = {
     activeCount : number,
@@ -12,7 +13,7 @@ type OrdersStateProp = {
     concluded : any[]
 }
 const Orders = () => {
-    const [data, setData] = useState<OrdersStateProp>({
+    const [data, _setData] = useState<OrdersStateProp>({
         activeCount : 0,
         active : [],
         dispute : [],
@@ -23,6 +24,7 @@ const Orders = () => {
 
     return (
         <div>
+            <PageTitle title={"BETATRUS | ORDERS"} />
             <Header />
             <main className="lg:px-15 md:px-5 px-2">
                 <section className="lg:w-[50%] md:w-[80%] w-[95%] mt-15">
@@ -37,10 +39,10 @@ const Orders = () => {
                     </ul>
                     <section className="space-y-6 mb-15">
                         <div className="lg:p-6 md:p-2 p-2 border-b border-b-gray-200 flex lg:gap-6 gap-3">
-                            <div className="lg:w-[192px] md:w-[150px] w-[120px] lg:h-[192px] md:h-[150px] h-[120px]">
+                            <div className="lg:w-48 md:w-37.5 w-30 lg:h-48 md:h-3.5 h-30">
                                 <img src={myWig} className="w-full h-full object-cover object-top" />
                             </div>
-                            <div className="font-manrope space-y-2 md:w-[calc((100%-192px)-20%)] md:w-[calc((100%-150px)-20%)]">
+                            <div className="font-manrope space-y-2 md:w-[calc((100%-192px)-20%)] w-[calc((100%-150px)-20%)]">
                                 <h2 className="font-bodoni font-medium lg:text-[24px] md:text-[18px] text-[16px] leading-[31.2px] text-[#1C1B1B]">Bone Straight HD Lace Wig</h2>
                                 <div className="md:text-[12px] text-[10px] leading-[14.4px] tracking-[0.6px] text-[#5E5F5D] flex gap-5">
                                     <p>ID: #BT-8829</p>
@@ -59,10 +61,10 @@ const Orders = () => {
                         </div>
 
                         <div className="lg:p-6 md:p-2 p-2 border-b border-b-gray-200 flex lg:gap-6 gap-3">
-                            <div className="lg:w-[192px] md:w-[150px] w-[120px] lg:h-[192px] md:h-[150px] h-[120px]">
+                            <div className="lg:w-48 md:w-37.5 w-30 lg:h-48 md:h-3.5 h-30">
                                 <img src={myWig} className="w-full h-full object-cover object-top" />
                             </div>
-                            <div className="font-manrope space-y-2 md:w-[calc((100%-192px)-20%)] md:w-[calc((100%-150px)-20%)]">
+                            <div className="font-manrope space-y-2 md:w-[calc((100%-192px)-20%)] w-[calc((100%-150px)-20%)]">
                                 <h2 className="font-bodoni font-medium lg:text-[24px] md:text-[18px] text-[16px] leading-[31.2px] text-[#1C1B1B]">Bone Straight HD Lace Wig</h2>
                                 <div className="md:text-[12px] text-[10px] leading-[14.4px] tracking-[0.6px] text-[#5E5F5D] flex gap-5">
                                     <p>ID: #BT-8829</p>
@@ -81,10 +83,10 @@ const Orders = () => {
                         </div>
 
                         <div className="lg:p-6 md:p-2 p-2 border-b border-b-gray-200 flex lg:gap-6 gap-3">
-                            <div className="lg:w-[192px] md:w-[150px] w-[120px] lg:h-[192px] md:h-[150px] h-[120px]">
+                            <div className="lg:w-48 md:w-37.5 w-30 lg:h-48 md:h-3.5 h-30">
                                 <img src={myWig} className="w-full h-full object-cover object-top" />
                             </div>
-                            <div className="font-manrope space-y-2 md:w-[calc((100%-192px)-20%)] md:w-[calc((100%-150px)-20%)]">
+                            <div className="font-manrope space-y-2 md:w-[calc((100%-192px)-20%)] w-[calc((100%-150px)-20%)]">
                                 <h2 className="font-bodoni font-medium lg:text-[24px] md:text-[18px] text-[16px] leading-[31.2px] text-[#1C1B1B]">Bone Straight HD Lace Wig</h2>
                                 <div className="md:text-[12px] text-[10px] leading-[14.4px] tracking-[0.6px] text-[#5E5F5D] flex gap-5">
                                     <p>ID: #BT-8829</p>

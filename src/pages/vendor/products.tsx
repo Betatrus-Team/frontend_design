@@ -1,10 +1,12 @@
 import { MoreVertical, Plus, Search, ShieldCheck } from "lucide-react";
 import { VendorHeader } from "./components/header";
 import wig from "../../assets/images/Image (3).png";
+import { PageTitle } from "../../components/title";
 
 const Products = () => {
     return (
         <div>
+            <PageTitle title={"BETATRUS VENDOR | PRODUCTS"} />
             <VendorHeader title="Products" />
             <main className="font-manrope flex justify-center bg-gray-50">
                 <div className="lg:w-[90%] w-[95%] lg:my-15 md:my-10 mt-7 mb-10">

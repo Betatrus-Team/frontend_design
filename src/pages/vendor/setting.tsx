@@ -3,6 +3,7 @@ import { VendorHeader } from "./components/header"
 import { useState } from "react";
 import { Toggle } from "./components/toggle";
 import imagePlaceholder from "../../assets/images/Container (3).png";
+import { PageTitle } from "../../components/title";
 
 type notificationPreferenceType = {
     orders : boolean,
@@ -23,7 +24,8 @@ const VendorSetting = () => {
 
     return (
         <div>
-            <VendorHeader title="Verification" />
+            <PageTitle title={"BETATRUS VENDOR | SETTINGS"} />
+            <VendorHeader title="Settings" />
             <main className="font-manrope flex justify-center bg-gray-50 pb-22">
                 <div className="lg:w-[90%] w-[95%] lg:my-15 md:my-10 mt-7 mb-10">
                     {/* Page Heading */}

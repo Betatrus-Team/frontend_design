@@ -1,6 +1,7 @@
 import { ArrowRight, Camera, ShieldCheck } from "lucide-react";
 import { VendorHeader } from "./components/header";
 import { useRef, useState } from "react";
+import { PageTitle } from "../../components/title";
 
 const StepOne = () => {
     const imageInput = useRef<HTMLInputElement>(null);
@@ -16,6 +17,7 @@ const StepOne = () => {
 
     return (
         <div>
+            <PageTitle title={"BETATRUS VENDOR | ONBOARDING STEP ONE"} />
             <VendorHeader />
             <main className="flex flex-col items-center pt-15 bg-[#FCF9F8] h-fit">
                 <div className="lg:w-[90%] w-[95%] flex md:flex-row flex-col space-y-10 justify-between mb-10">
