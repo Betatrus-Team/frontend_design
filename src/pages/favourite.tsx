@@ -11,7 +11,7 @@ const Favourites = () => {
             <Header />
             <main className="flex-1 py-20 px-2 flex justify-center font-manrope text-[#1A1C1A]">
                 <div className="md:w-[80%] w-[95%]">
-                    <h1 className="font-noto font-bold md:text-[48px] text-[30px] md:leading-18 leading-6 mb-6">Your Favourites</h1>
+                    <h1 className="font-noto font-bold lg:text-[48px] md:text-[38px] text-[30px] md:leading-18 leading-6 mb-6">Your Favourites</h1>
                     <p className="text-[12px] leading-4 tracking-[1.2px] md:mb-24 mb-15">6 CURATED TREASURES</p>
                     <section className="space-y-12">
                         <div className="w-full md:pb-12 pb-8 border-b border-b-[#d4c3be71]">

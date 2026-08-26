@@ -83,11 +83,11 @@ const Category = () => {
                 {/* Page Introduction */}
                 <section>
 
-                <h1 className="text-[30px] font-bold text-gray-900 md:text-[34px] capitalize">
+                <h1 className="lg:text-[48px] md:text-[38px] text-[30px] font-bold text-gray-900 capitalize">
                     {category?.split("_").join(" ")}
                 </h1>
 
-                <p className="mt-2 max-w-162.5 md:text-[14.71px] text-[12px] leading-5">
+                <p className="mt-2 max-w-162.5 md:text-[18px] text-[16px] leading-5">
                     Discover our signature line of high-definition body wave wigs and
                     premium hair extensions, designed for the discerning individual
                     who demands both luxury and durability.
@@ -132,7 +132,7 @@ const Category = () => {
                             {product.name}
                             </h2>
 
-                            <span className="whitespace-nowrap md:text-[14.66px] text-[11px] leading-5.5 font-medium text-gray-800">
+                            <span className="whitespace-nowrap md:text-[15px] text-[12px] leading-5.5 font-medium text-gray-800">
                             ₦{product.price}
                             </span>
 
@@ -140,7 +140,7 @@ const Category = () => {
 
 
                         {/* Description */}
-                        <p className="mt-2 md:text-[11px] text-[9px] leading-4 text-gray-500">
+                        <p className="mt-2 md:text-[12px] text-[10px] leading-4 text-gray-500">
                             {product.description}
                         </p>
 

@@ -10,7 +10,7 @@ const ProductDescription = () => {
         <div>
             <PageTitle title={"BETATRUS | PRODUCT"} />
             <Header />
-            <main className="font-manrope py-10 lg:px-10 md:px-3 px-2 text-[#504441]">
+            <main className="font-manrope py-10 lg:px-10 md:px-3 px-3 text-[#504441]">
                 <ul className="breadcrumnb flex items-center gap-2 text-[16px] text-[#504441] mb-12 leading-6">
                     <li>Home</li>
                     <li className="text-[12px]">&gt;</li>
@@ -96,8 +96,8 @@ const ProductDescription = () => {
                     </div>
                 </section>
                 <section className="border-t border-t-[#1c1b1b18] pt-6 pb-12 md:mb-12 mb-6">
-                    <ul className="flex gap-12 *:pb-3 *:md:text-[16px] *:text-[12px] mb-6">
-                        <li className="border-b-2 border-b-[#0000FF]">PRODUCT SPECS</li>
+                    <ul className="flex gap-12 *:pb-3 *:md:text-[16px] *:text-[10px] mb-6">
+                        <li className="border-b-2 border-primary">PRODUCT SPECS</li>
                         <li>SHIPPING & RETURNS</li>
                         <li>VERIFIED REVIEWS (12)</li>
                     </ul>
@@ -105,7 +105,7 @@ const ProductDescription = () => {
                         <section className="md:w-[48%] w-full">
                             <h2 className="font-medium md:text-[24px] text-[20px] leading-7.5 mb-6 font-bodoni">Material & Construction</h2>
                             <div className="w-full">
-                                <table className="w-full *:flex *:justify-between md:text-[16px] text-[14px] space-y-4 leading-6 font-medium">
+                                <table className="w-full *:flex *:justify-between md:text-[16px] text-[12px] space-y-4 leading-6 font-medium">
                                     <tr className="border-b border-b-[#1c1b1b18] pb-2">
                                         <td>Hair Type</td>
                                         <td>100% Unprocessed Cambodian Human Hair</td>
@@ -134,9 +134,9 @@ const ProductDescription = () => {
                     </div>
                 </section>
                 <section>
-                    <div className="flex justify-between mb-6">
-                        <h2 className="md:text-[32px] text-[20px] font-medium leading-9.5 font-bodoni">Verified Purchases</h2>
-                        <p className="text-[16px] text-primary underline">Write a Review</p>
+                    <div className="flex items-center justify-between mb-6">
+                        <h2 className="md:text-[32px] text-[18px] font-medium leading-9.5 font-bodoni">Verified Purchases</h2>
+                        <p className="md:text-[16px] text-[14px] text-primary underline">Write a Review</p>
                     </div>
                     <div className="flex md:flex-row flex-col *:md:w-[48%] w-full gap-[4%]">
                         <section className="p-8 bg-[#F0EDED] border space-y-4 border-[#1c1b1b18] text-black">
@@ -157,7 +157,7 @@ const ProductDescription = () => {
                                 </div>
                             </div>
                             <div className="space-y-6">
-                                <p>
+                                <p className="md:text-[16px] text-[14px]">
                                     "The HD lace is actually invisible! I've bought many 'HD' wigs but this is the real deal. Shipping to Abuja was super fast too. Very impressed with the escrow system, made me feel safe buying a high-value item."
                                 </p>
                                 <div className="flex">

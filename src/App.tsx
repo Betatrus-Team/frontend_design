@@ -25,6 +25,7 @@ import Sales from './pages/vendor/sales';
 import AddProduct from './pages/vendor/add_product_one';
 import ProductVariants from './pages/vendor/add_product_two';
 import Category from './pages/category';
+import { ToggleState } from './pages/vendor/context/toggle_context';
 
 function App() {
   return (
@@ -48,12 +49,14 @@ function App() {
           <Route path='/orders' element={<Orders />} />
           <Route path='/vendor/onboarding/1' element={<StepOne />} />
           <Route path='/vendor/onboarding/2' element={<StepTwo />} />
-          <Route element={<SideBarLayout />}>
-            <Route path='/vendor/products' element={<Products />} />
-            <Route path='/vendor/verification' element={<Verification />} />
-            <Route path='/vendor/settings' element={<VendorSetting />} />
-            <Route path='/vendor/' element={<VendorDashboard />} />
-            <Route path='/vendor/sales' element={<Sales />} />
+          <Route element={<ToggleState />}>
+            <Route element={<SideBarLayout />}>
+              <Route path='/vendor/products' element={<Products />} />
+              <Route path='/vendor/verification' element={<Verification />} />
+              <Route path='/vendor/settings' element={<VendorSetting />} />
+              <Route path='/vendor/' element={<VendorDashboard />} />
+              <Route path='/vendor/sales' element={<Sales />} />
+            </Route>
           </Route>
           <Route path='/vendor/add_products/1' element={<AddProduct />} />
           <Route path='/vendor/add_products/2' element={<ProductVariants />} />
