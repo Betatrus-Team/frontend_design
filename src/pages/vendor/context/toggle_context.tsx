@@ -24,7 +24,7 @@ const ToggleState = () => {
 export const useToggle = () => {
     const context = useContext(toggleContext);
 
-    if (!context) return null;
+    if (!context) throw new Error("useToggle must be within ToggleState");
 
     return context;
 }
